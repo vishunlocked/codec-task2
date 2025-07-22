@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* ---- Global Styling ---- */
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4 {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* ---- Metric Container ---- */
+div[data-testid="metric-container"] {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---- Sidebar ---- */
+section[data-testid="stSidebar"] {
+    background-color: #1e293b;
+    color: white;
+}
+
+section[data-testid="stSidebar"] .css-1d391kg {
+    color: white;
+}
+
+section[data-testid="stSidebar"] .css-1v0mbdj,
+section[data-testid="stSidebar"] .css-1cpxqw2 {
+    color: #ffffff;
+}
+
+/* Attempt to hide any rogue sidebar input fields */
+section[data-testid="stSidebar"] input[type="text"],
+section[data-testid="stSidebar"] input[type="search"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Sidebar buttons and links hover */
+section[data-testid="stSidebar"] button:hover,
+section[data-testid="stSidebar"] a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ---- Option Menu Highlight ---- */
+.css-1d391kg > div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* ---- Input Styling ---- */
+input, .stTextInput > div > div > input {
+    background-color: #1e293b;
+    border: 2.5px solid #ff4b4b !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder text color */
+input::placeholder, .stTextInput > div > div > input::placeholder {
+    color: #bbbbbb;
+}
+
+/* Focus state */
+input:focus, .stTextInput > div > div > input:focus {
+    border: 3px solid #ff1a1a !important;
+    outline: none !important;
+    box-shadow: 0 0 8px #ff1a1a !important;
+}
+
+/* ---- Table Styling ---- */
+thead tr th {
+    background-color: #e2e8f0;
+    color: #1f2937;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
