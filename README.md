@@ -10,7 +10,7 @@ This project is a real-time stock market dashboard built with Python. It fetches
 
 - Real-time data fetching and updates for selected stocks
 - Interactive graphs and charts using Plotly
-- Key financial indicators and metrics display
+- Key financial indicators and metrics display 
 - User-friendly interface built with Streamlit
 - Easy selection of stocks to track
 
